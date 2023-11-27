@@ -69,13 +69,22 @@ export default function About() {
         </li>
         <li key="web imp">
           <p className="font-semibold">web imp</p>
-          <p>i work as a backend developer at web imp.</p>
+          <p>
+            after have a good understanding of javascript/node, i start to work
+            at web imp as a backend developer. i learn a lot of things at there
+            one of the example is handling neo4j databases, i even never heard
+            of this kind of databases. most of my work is plan and implementing
+            new feature with the team, debug and fix issues and do some
+            refactoring if most of the task finished.
+          </p>
         </li>
         <li key="astra">
           <p className="font-semibold">astra satria investama</p>
           <p>
             i started my career as an android developer at astra satria
-            investama.
+            investama. at there i start with developing an android app that can
+            contain multiple unity games. at that time i also start to learn
+            javascript/node to handle the game server.
           </p>
         </li>
       </ul>

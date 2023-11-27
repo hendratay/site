@@ -8,8 +8,32 @@ export default async function Project() {
         private projects
       </h1>
       <ul className="list-outside list-disc">
+        <li key="roguelike game">
+          <a className="text-slate-600">roguelike game</a>
+          <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 ml-2">
+            rust
+          </span>
+          <p className="text-sm">
+            [wip] 2d roguelike game that develop using bevy framework.
+          </p>
+        </li>
+        <li key="freelance">
+          <a className="text-slate-600">freelance</a>
+          <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 ml-2">
+            typescript
+          </span>
+          <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 ml-1">
+            javascript
+          </span>
+          <p className="text-sm">
+            several system that host on linode, heroku and vercel. develop
+            chrome extension to crawl the data and export to excel. tech stack
+            react as frontend, node/express as backend and postgresql as
+            database.
+          </p>
+        </li>
         <li key="wishywashy">
-          <a className="text-blue-600 hover:font-semibold">wishywashy</a>
+          <a className="text-slate-600">wishywashy</a>
           <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 ml-2">
             typescript
           </span>

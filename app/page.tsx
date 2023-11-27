@@ -44,11 +44,11 @@ export default function Home() {
         <div>
           <p className="font-semibold mb-1">
             <a
-              href="https://github.com/tlcheah2/stoic-quote-lambda-public-api"
+              href="https://github.com/lukePeavey/quotable"
               target="_blank"
               className="hover:text-blue-600"
             >
-              stoicism quotes
+              famous quotes
               <span className="align-middle">
                 <FontAwesomeIcon icon={faLink} className="h-4 w-4 ml-2" />
               </span>
@@ -260,7 +260,7 @@ function HackerNewsItem({
 function RandomQuotes() {
   const { data, error } = useSWR("getQuotes", {
     fetcher: async () => {
-      const res = await fetch("https://api.themotivate365.com/stoic-quote");
+      const res = await fetch("https://api.quotable.io/quotes/random");
       return res.json();
     },
     revalidateOnFocus: false,
@@ -275,8 +275,8 @@ function RandomQuotes() {
 
   return (
     <div>
-      <p className="lowercase">{data.quote}</p>
-      <p className="lowercase text-slate-600">- {data.author}</p>
+      <p className="lowercase">{data[0].content}</p>
+      <p className="lowercase text-slate-600">- {data[0].author}</p>
     </div>
   );
 }
