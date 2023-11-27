@@ -152,7 +152,7 @@ export default async function Home() {
             </a>
           </p>
           <p className="lowercase">{quotes[0].q}</p>
-          <p className="italic lowercase">- {quotes[0].a}</p>
+          <p className="lowercase text-slate-600">- {quotes[0].a}</p>
         </div>
         <div>
           <p className="font-semibold mb-1">
