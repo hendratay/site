@@ -12,8 +12,8 @@ export function Navbar() {
           <div className="flex flex-row space-x-4 py-1">
             <NavItem path="/" name="home" />
             <NavItem path="/about" name="about" />
-            <NavItem path="/blog" name="blog" />
             <NavItem path="/project" name="project" />
+            <NavItem path="/blog" name="blog" />
           </div>
         </nav>
       </div>

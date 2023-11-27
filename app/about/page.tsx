@@ -23,7 +23,7 @@ export default function About() {
       <p className="my-4">
         a <b>vim</b> user that move to <b>doom emacs</b>. used to distro hopping
         and seeking "perfect setup" but now just use everything as long as it is
-        working. but still more comfortable using linux based distro. want to
+        working. but still more comfortable using linux based distro, want to
         keep everything lightweight or undercontrol.
       </p>
       <div className="flex flex-row flex-wrap my-4">
@@ -87,92 +87,48 @@ export default function About() {
         <li key="languages">
           <p className="font-semibold">languages</p>
           <p>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              javascript
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              typescript
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              kotlin
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              rust
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              csharp
-            </span>
+            <SkillItem name="javascript" />
+            <SkillItem name="typescript" />
+            <SkillItem name="kotlin" />
+            <SkillItem name="rust" />
+            <SkillItem name="csharp" />
           </p>
         </li>
         <li key="frameworks">
           <p className="font-semibold">frameworks</p>
           <p>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              node
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              express
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              react
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              android
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              bevy
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              monogame
-            </span>
+            <SkillItem name="node" />
+            <SkillItem name="express" />
+            <SkillItem name="react" />
+            <SkillItem name="android" />
+            <SkillItem name="bevy" />
+            <SkillItem name="monogame" />
           </p>
         </li>
         <li key="databases">
           <p className="font-semibold">databases</p>
           <p>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              postgresql
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              mysql
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              neo4j
-            </span>
+            <SkillItem name="postgresql" />
+            <SkillItem name="mysql" />
+            <SkillItem name="neo4j" />
           </p>
         </li>
         <li key="tools">
           <p className="font-semibold">tools</p>
           <p>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              git
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              vim
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              doom emacs
-            </span>
+            <SkillItem name="git" />
+            <SkillItem name="vim" />
+            <SkillItem name="doom emacs" />
           </p>
         </li>
         <li key="deployments">
           <p className="font-semibold">deployments</p>
           <p>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              linode
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              heroku
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              vercel
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              google cloud platforms
-            </span>
-            <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
-              amazon web services
-            </span>
+            <SkillItem name="linode" />
+            <SkillItem name="heroku" />
+            <SkillItem name="vercel" />
+            <SkillItem name="google cloud platforms" />
+            <SkillItem name="amazon web services" />
           </p>
         </li>
       </ul>
@@ -196,5 +152,13 @@ function AboutItem({
         {name}
       </span>
     </a>
+  );
+}
+
+function SkillItem({ name }: { name: string }) {
+  return (
+    <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
+      {name}
+    </span>
   );
 }

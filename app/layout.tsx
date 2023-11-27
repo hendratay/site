@@ -1,6 +1,6 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import type { Metadata } from "next";
-import { Navbar } from "./components/nav";
+import { Navbar } from "./_components/nav";
 import "./globals.css";
 
 export const metadata: Metadata = {
