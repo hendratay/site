@@ -11,7 +11,7 @@ const font = Inconsolata({
 
 export const metadata: Metadata = {
   title: "laziest.site",
-  description: "-",
+  description: "minimalist personal website or portfolio site"
 };
 
 export default function RootLayout({
