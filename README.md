@@ -14,7 +14,7 @@ this is a [next.js](https://nextjs.org/) project bootstrapped with [`create-next
 first, run the development server:
 
 ```bash
-git clone https://github.com/hendratay/site.git
+git clone https://github.com/hendratay/laziest.site.git
 cd site
 npm install
 npm run dev
