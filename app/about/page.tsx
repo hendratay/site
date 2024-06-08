@@ -156,7 +156,7 @@ function AboutItem({
 }) {
   return (
     <a href={href} target="_blank" className="hover:font-semibold">
-      <span className="inline-flex items-center rounded bg-black mt-1 mr-1 px-2 py-1 text-xs text-white">
+      <span className="inline-flex items-center rounded bg-black dark:bg-white mt-1 mr-1 px-2 py-1 text-xs text-white dark:text-black">
         <FontAwesomeIcon icon={icon} className="mr-1.5" />
         {name}
       </span>
@@ -166,7 +166,7 @@ function AboutItem({
 
 function SkillItem({ name }: { name: string }) {
   return (
-    <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 mr-1">
+    <span className="inline-flex items-center rounded-sm bg-black dark:bg-white text-xs text-white dark:text-black lowercase px-1 mr-1">
       {name}
     </span>
   );

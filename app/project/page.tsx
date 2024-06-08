@@ -10,7 +10,7 @@ export default async function Project() {
       <ul className="list-outside list-disc">
         <li key="roguelike game">
           <a className="text-slate-600">roguelike game</a>
-          <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 ml-2">
+          <span className="inline-flex items-center rounded-sm bg-black dark:bg-white text-xs text-white dark:text-black lowercase px-1 ml-2">
             rust
           </span>
           <p className="text-sm">
@@ -19,10 +19,10 @@ export default async function Project() {
         </li>
         <li key="freelance">
           <a className="text-slate-600">freelance</a>
-          <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 ml-2">
+          <span className="inline-flex items-center rounded-sm bg-black dark:bg-white text-xs text-white dark:text-black lowercase px-1 ml-2">
             typescript
           </span>
-          <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 ml-1">
+          <span className="inline-flex items-center rounded-sm bg-black dark:bg-white text-xs text-white dark:text-black lowercase px-1 ml-1">
             javascript
           </span>
           <p className="text-sm">
@@ -34,10 +34,10 @@ export default async function Project() {
         </li>
         <li key="wishywashy">
           <a className="text-slate-600">wishywashy</a>
-          <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 ml-2">
+          <span className="inline-flex items-center rounded-sm bg-black dark:bg-white text-xs text-white dark:text-black lowercase px-1 ml-2">
             typescript
           </span>
-          <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 ml-1">
+          <span className="inline-flex items-center rounded-sm bg-black dark:bg-white text-xs text-white dark:text-black lowercase px-1 ml-1">
             javascript
           </span>
           <p className="text-sm">
@@ -67,7 +67,7 @@ export default async function Project() {
               >
                 {repo.name}
               </a>
-              <span className="inline-flex items-center rounded-sm bg-black text-xs text-white lowercase px-1 ml-2">
+              <span className="inline-flex items-center rounded-sm bg-black dark:bg-white text-xs text-white dark:text-black lowercase px-1 ml-2">
                 {repo.language}
               </span>
               <p className="text-sm">{repo.description}</p>
